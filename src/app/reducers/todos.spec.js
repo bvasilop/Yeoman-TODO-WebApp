@@ -3,18 +3,15 @@ import * as types from '../constants/ActionTypes';
 
 describe('todos reducer', () => {
   it('should handle initial state', () => {
-    expect(
-      todos(undefined, {})
-    ).toEqual([
+    expect(todos(undefined, {})).toEqual([
       {
-        text: 'Use Redux',
+        text: 'Use Yeoman', // <=== HERE
         completed: false,
         id: 0
       }
     ]);
   });
-
-  it('should handle ADD_TODO', () => {
+  it('should handle initial state', () => {
     expect(
       todos([], {
         type: types.ADD_TODO,
