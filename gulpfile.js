@@ -9,7 +9,7 @@ const conf = require('./conf/gulp.conf');
 
 // Load some files into the registry
 const hub = new HubRegistry([conf.path.tasks('*.js')]);
-// deploy on gh-pages
+// deploy project on gh-pages
 gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')
     .pipe(ghPages());
