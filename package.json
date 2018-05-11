@@ -1,5 +1,5 @@
 {
-  "name": "TODO-WebApp",
+  "name": "TODO-MVC-WebApp",
   "homepage":  ".",
   "version": "0.1.0",
   "private": true,
@@ -43,9 +43,7 @@
     "extract-text-webpack-plugin": "^2.0.0-rc.3",
     "gh-pages-deploy": "^0.4.2",
     "grunt-karma": "^2.0.0",
-    "gulp": "^3.9.1",
-    "gulp-minify-css": "^1.2.4",
-    "gulp-minify-html": "^1.0.6",
+    "gulp": "github:gulpjs/gulp#4ed9a4a3275559c73a396eff7e1fde3824951ebb",
     "gulp-filter": "^5.0.0",
     "gulp-gh-pages": "^0.5.4",
     "gulp-hub": "frankwallis/gulp-hub#d461b9c700df9010d0a8694e4af1fb96d9f38bf4",
@@ -75,8 +73,6 @@
     "webpack-hot-middleware": "^2.17.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "gulp",
     "serve": "gulp serve",
     "serve:dist": "gulp serve:dist",
