@@ -1,6 +1,6 @@
 {
   "name": "TODO-MVC-WebApp",
-  "homepage":  ".",
+  "homepage": "https://github.com/bvasilop/Yeoman-TODO-WebApp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -73,6 +73,7 @@
     "webpack-hot-middleware": "^2.17.0"
   },
   "scripts": {
+    "deploy": "gulp deploy-gh-pages",
     "build": "gulp",
     "serve": "gulp serve",
     "serve:dist": "gulp serve:dist",
