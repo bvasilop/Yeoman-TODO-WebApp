@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const deploy = require('gulp-gh-pages');
 const HubRegistry = require('gulp-hub');
 const browserSync = require('browser-sync');
 
@@ -22,7 +23,7 @@ gulp.task('watch', watch);
 
 // deploy project on gh-pages
 gulp.task('deploy', () => {
-  return gulp.src('./publish/**/*')
+  return gulp.src('./dist/**/*')
     .pipe(ghPages());
 });
 
