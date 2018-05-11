@@ -3,12 +3,16 @@ const deploy = require('gulp-gh-pages');
 const HubRegistry = require('gulp-hub');
 const browserSync = require('browser-sync');
 
+<<<<<<< HEAD
 const ghPages = require('gulp-gh-pages');
 
+=======
+>>>>>>> parent of 59a4f26...  added gulp deploy
 const conf = require('./conf/gulp.conf');
 
 // Load some files into the registry
 const hub = new HubRegistry([conf.path.tasks('*.js')]);
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 // Tell gulp to use the tasks just loaded
@@ -26,6 +30,11 @@ gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')
     .pipe(ghPages());
 });
+=======
+
+// Tell gulp to use the tasks just loaded
+gulp.registry(hub);
+>>>>>>> parent of 59a4f26...  added gulp deploy
 
 gulp.task('test', gulp.series('karma:single-run'));
 gulp.task('test:auto', gulp.series('karma:auto-run'));
