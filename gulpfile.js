@@ -9,6 +9,7 @@ const conf = require('./conf/gulp.conf');
 
 // Load some files into the registry
 const hub = new HubRegistry([conf.path.tasks('*.js')]);
+<<<<<<< HEAD
 
 // Tell gulp to use the tasks just loaded
 gulp.registry(hub);
@@ -18,6 +19,10 @@ gulp.task('build', gulp.series(gulp.parallel('other', 'webpack:dist')));
 
 // deploy project on gh-pages
 gulp.task('deploy', () => {
+=======
+// deploy on gh-pages
+gulp.task('deploy', function() {
+>>>>>>> parent of 797e66f... deployed on gh-pages
   return gulp.src('./dist/**/*')
     .pipe(ghPages());
 });
