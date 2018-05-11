@@ -1,4 +1,8 @@
 {
+  "name": "TODO-WebApp",
+  "homepage":  ".",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "classnames": "^2.2.5",
     "es6-shim": "^0.35.3",
